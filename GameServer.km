@@ -1,0 +1,364 @@
+{
+    "root": {
+        "data": {
+            "id": "d0x8v1fykds0",
+            "created": 1714458629829,
+            "text": "GameServer"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d0x8vcyjgv40",
+                    "created": 1714458654897,
+                    "text": "游戏",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0xbcsunw280",
+                            "created": 1714465663902,
+                            "text": "基础设施",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0xb89pr8gg0",
+                                    "created": 1714465308790,
+                                    "text": "登录注册"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0xb8j8bddk0",
+                                            "created": 1714465329503,
+                                            "text": "权限验证"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0xb8mkfhk00",
+                                            "created": 1714465336766,
+                                            "text": "加密讯通"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0xb8vwol9c0",
+                                            "created": 1714465357098,
+                                            "text": "登录服"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d0xc39apqxc0",
+                                                    "created": 1714467737169,
+                                                    "text": "本质上也还是一个集群的节点，只不过负责的功能与逻辑服不同"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0xb8y3aktc0",
+                                            "created": 1714465361851,
+                                            "text": "gate网关"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xb989563c0",
+                                    "created": 1714465383973,
+                                    "text": "CS通讯协议制定"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0xb9k29aw00",
+                                            "created": 1714465409678,
+                                            "text": "json"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0xb9ojo29k0",
+                                            "created": 1714465419438,
+                                            "text": "protobuf"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xba7fptz40",
+                                    "created": 1714465460558,
+                                    "text": "请求与推送"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0xbajcz1080",
+                                            "created": 1714465486513,
+                                            "text": "request"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0xbamz3qw80",
+                                            "created": 1714465494381,
+                                            "text": "push"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xbfmphlhs0",
+                                    "created": 1714465885621,
+                                    "text": "集群"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xbhzx6aw00",
+                                    "created": 1714466071112,
+                                    "text": "AOI算法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xc0g97gj40",
+                                    "created": 1714467517223,
+                                    "text": "背包设计"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xc0l6qonc0",
+                                    "created": 1714467527958,
+                                    "text": "帮派设计"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xc0pi34400",
+                                    "created": 1714467537351,
+                                    "text": "排行榜设计"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xbi43eguw0",
+                                    "created": 1714466080196,
+                                    "text": "状态同步"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xbi5zx87c0",
+                                    "created": 1714466084339,
+                                    "text": "数据持久化"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xbkw27ywo0",
+                                    "created": 1714466297803,
+                                    "text": "管理后台的搭建"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xbl5jzl540",
+                                    "created": 1714466318468,
+                                    "text": "性能监控怎么做"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xbud5jxtk0",
+                                    "created": 1714467040287,
+                                    "text": "合服"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xbueksqu00",
+                                    "created": 1714467043385,
+                                    "text": "跨服"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0xd3136dkg0",
+                                    "created": 1714470540409,
+                                    "text": "断线重连"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0xbdg4uvs00",
+                            "created": 1714465714584,
+                            "text": "topic"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0x8ve0hyk00",
+                    "created": 1714458657192,
+                    "text": "技术"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0x8w04rdtk0",
+                            "created": 1714458705339,
+                            "text": "skynet"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0x9240g2rk0",
+                                    "created": 1714459183971,
+                                    "text": "应用层面"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0x9283hvu80",
+                                    "created": 1714459192862,
+                                    "text": "源码层面"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0x941nzjrc0",
+                                            "created": 1714459335592,
+                                            "text": "work/工作线程"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0x94b2njiw0",
+                                            "created": 1714459356070,
+                                            "text": " "
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0x8w1ti6eg0",
+                            "created": 1714458709012,
+                            "text": "lua"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0x8yrr7sbk0",
+                                    "created": 1714458922199,
+                                    "text": "应用层面"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0x92z3daog0",
+                                            "created": 1714459251628,
+                                            "text": "热更新"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d0x931ailr40",
+                                    "created": 1714459256413,
+                                    "text": "源码层面"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0x93542z340",
+                                            "created": 1714459264731,
+                                            "text": "词法分析器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0x93ae5tu80",
+                                            "created": 1714459276225,
+                                            "text": "语法分析器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0x93nj9lq00",
+                                            "created": 1714459304832,
+                                            "text": "语义分析"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0x93eyueeg0",
+                                            "created": 1714459286183,
+                                            "text": "中间代码生成"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d0x93sor3aw0",
+                                            "created": 1714459316047,
+                                            "text": "目标代码生成"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
