@@ -1,5 +1,9 @@
 local login = require "snax.loginserver"
 local skynet = require "skynet"
+local crypt = require "skynet.crypt"
+
+--游戏服id可以自己组装,集群的服务名字，字符串类型
+local gameserver = "logicServer100"
 
 local server = {
 	host = "127.0.0.1",
@@ -21,31 +25,26 @@ end
 
 function server.login_handler(server, uid, secret)
 	print(string.format("%s@%s is login, secret is %s", uid, server, crypt.hexencode(secret)))
-	local gameserver = assert(server_list[server], "Unknown server")
-	-- only one can login, because disallow multilogin
-	local last = user_online[uid]
-	if last then
-		skynet.call(last.address, "lua", "kick", uid, last.subid)
-	end
-	if user_online[uid] then
-		error(string.format("user %s is already online", uid))
-	end
 
-	local subid = tostring(skynet.call(gameserver, "lua", "login", uid, secret))
-	user_online[uid] = { address = gameserver, subid = subid , server = server}
+	-- local subid = tostring(skynet.call(gameserver, "lua", "login", uid, secret) or 123)
+	local subid = "123"
+	-- user_online[uid] = { address = gameserver, subid = subid , server = server}
 	return subid
 end
-
+-- 自定义函数接口
+local CMD = {}
 function server.command_handler(command, ...)
 	local f = assert(CMD[command])
 	return f(...)
 end
 
--- 自定义函数接口
-local CMD = {}
 function CMD.start()
     local user = skynet.call("cache", "lua", "loadUser")
     skynet.error(user)
+end
+
+function CMD.register_gate(server, address)
+	server_list[server] = address
 end
 
 return login(server)

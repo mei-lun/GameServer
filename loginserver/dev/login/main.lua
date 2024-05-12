@@ -10,6 +10,7 @@ skynet.start(function()
     skynet.name("cache", skynet.uniqueservice("cache"))
     -- 启动登录服服务
     skynet.name(".logind", skynet.uniqueservice("login"))
+    skynet.call(".logind", "lua", "start")
     cluster.open("loginServer")
 
     skynet.error("login server start success")
