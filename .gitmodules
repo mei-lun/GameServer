@@ -1,3 +1,6 @@
 [submodule "loginserver/skynet"]
 	path = loginserver/skynet
 	url = git@github.com:cloudwu/skynet.git
+[submodule "logicserver/skynet"]
+	path = logicserver/skynet
+	url = git@github.com:cloudwu/skynet.git
