@@ -4,7 +4,7 @@ local skynet = require "skynet"
 
 local commands = {}
 
-local function loadUser()
+function commands:loadUser()
     skynet.error("cache loadUser...")
     return "cache loadUser success!"
 end
@@ -14,6 +14,7 @@ local function init()
 end
 
 local function receive(session, address, cmd, ...)	
+    skynet.error("**********cmd: " .. cmd)
     -- 定义数据处理函数
     local func = commands[cmd]
     if func then
