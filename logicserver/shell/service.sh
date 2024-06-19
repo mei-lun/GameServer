@@ -4,10 +4,12 @@ function start_func(){
     nowPath=$(dirname "$0")
     cd $nowPath
     parentPath=$(dirname $(pwd))
-    ps -o command -C skynet | grep "./skynet/skynet ./config/login.conf" &> /dev/null
+    # ps -o command -C skynet | grep "./skynet/skynet ./config/login.conf" &> /dev/null
+    ps -o command -C skynet | grep "./skynet/skynet ./config/logic.conf" &> /dev/null
     [ $? -eq 0 ] && echo "进程$1已经存在,禁止重复启动" && return
     # 后台运行
-    nohup $parentPath/skynet/skynet $parentPath/config/login.conf &> /dev/null &
+    # nohup $parentPath/skynet/skynet $parentPath/config/login.conf &> /dev/null &
+    nohup $parentPath/skynet/skynet $parentPath/config/logic.conf &>$parentPath/skynet.log 2>&1 &
     echo $parentPath, "服务器启动成功！"
 }
 

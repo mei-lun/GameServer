@@ -1,0 +1,27 @@
+[:00000002] LAUNCH snlua bootstrap
+[:00000003] LAUNCH snlua launcher
+[:00000004] LAUNCH snlua cdummy
+[:00000005] LAUNCH harbor 0 4
+[:00000006] LAUNCH snlua datacenterd
+[:00000007] LAUNCH snlua service_mgr
+[:00000008] LAUNCH snlua main
+[:00000009] LAUNCH snlua clusterd
+[:00000009] Config nowaiting = true
+[:00000009] loginServer 	127.0.0.1:2528
+[:00000009] logicServer 	127.0.0.1:2529
+[:00000008] logic server start...
+[:0000000a] LAUNCH snlua debug_console 127.0.0.1 8092
+[:0000000a] Start debug console at 127.0.0.1:8092
+[:0000000b] LAUNCH snlua flow
+[:0000000b] flow begin...
+[:0000000b] flow end...
+[:0000000b] in flow call cmd: start
+[:0000000b] call flow start CMD
+[:0000000c] LAUNCH snlua clusterproxy loginServer .logind
+[:0000000d] LAUNCH snlua clustersender loginServer ubuntu63065 127.0.0.1 2528
+[:0000000e] LAUNCH snlua gated 12
+[:0000000e] Listen on 0.0.0.0:8101
+[:0000000f] LAUNCH snlua gate
+[:0000000f] Listen on 127.0.0.1:2529
+[:00000008] logic server start success
+[:00000002] KILL self
